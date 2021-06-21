@@ -12,6 +12,12 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../components/Home.vue'),
   },
+  {
+    path: '/bikePage/:id',
+    name: 'BikePage',
+    component: () => import(/* webpackChunkName: "about" */ '../components/BikePage.vue'),
+    props: true,
+  },
 ];
 
 const router = new VueRouter({

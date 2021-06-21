@@ -1,8 +1,9 @@
 <template>
   <main>
-    <h1>Bryn's Garage</h1>
-    <p>Hi there! Welcome to Bryn's garage. A site dedicated to the motorcycles that have been or will be in my garage one day and to help encourage others to learn more about these beautiful bikes!</p>
+    <h1>Motorcycle Garage</h1>
+    <p>Hi there! Welcome to the Motorcycle garage. A site dedicated to the interesting bikes, bikes I have or do own, and possible future bikes! This page is meant to be a fun tool to help encourage others to learn more about these beautiful bikes!</p>
     <section>
+      <h3>Click any of the cards below to learn more about the bike!</h3>
       <BikeCard v-for="(bike, index) in motorcycles" :key="index" :bike="bike" />
     </section>
   </main>
