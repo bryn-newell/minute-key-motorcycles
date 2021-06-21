@@ -1,7 +1,7 @@
 <template>
   <section class="home">
     <h1 class="heading">Motorcycle Garage</h1>
-    <p>Hi there! Welcome to the Garage. A site dedicated to interesting bikes, bikes I have owned or currently ride, and possible future bikes! This page is meant to be a fun tool to help encourage others to learn more about these beautiful bikes!</p>
+    <p>Hi there! Welcome to The Garage. A site dedicated to interesting bikes, bikes I have owned or currently ride, and possible future bikes! This page is meant to be a fun tool to help encourage others to learn more about these beautiful bikes!</p>
     <p>Click any of the cards below to learn more about the bike!</p>
     <section class="card-container">
       <BikeCard v-for="(bike, index) in motorcycles" :key="index" :bike="bike" />
