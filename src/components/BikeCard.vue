@@ -1,6 +1,6 @@
 <template>
   <section class="bike-card" tabindex="0" @click="viewBikePage" @keypress.enter="viewBikePage">
-    <h2>{{ bike.year }} {{ bike.manufacturer }} {{ bike.model }}</h2>
+    <h2 class="card-heading">{{ bike.year }} {{ bike.manufacturer }} {{ bike.model }}</h2>
     <img :src="bikeImage" :alt="bike.model">
   </section>
 </template>
@@ -27,9 +27,21 @@ export default {
 
 <style lang="scss">
   .bike-card {
+    border: 1px solid $black;
+    border-radius: $border-radius;
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     img {
-      max-width: 900px;
+      border-radius: $border-radius;
+      max-width: 100%;
+      height: auto;
+    }
+    @media (max-width: $breakpoint-md) {
+      .card-heading {
+        font-size: $font-size-28;
+      }
     }
   }
 </style>

@@ -1,20 +1,19 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link>
-    </div>
+  <main id="app">
     <router-view/>
-  </div>
+  </main>
 </template>
 
 <style lang="scss">
 @import './styles/main.scss';
 
 #app {
+  background-color: $gray;
+  color: $black;
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  padding: 12px;
 }
 </style>
